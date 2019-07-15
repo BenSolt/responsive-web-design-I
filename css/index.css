@@ -1,3 +1,221 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+h2 {
+    margin: 15px;
+}
+
+
+/* ==============INDEX PAGE===================*/
+
+div {
+    line-height: 1.25;
+}
+
+
+/* paragraphs */
+
+p {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+/* buttons, great idea img  */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 2%;
+    background: white;
+}
+
+
+/* services, product, about, contact  */
+
+a {
+    display: flex;
+    margin: 1%;
+    color: gray;
+    text-decoration: none;
+}
+
+hr {
+    line-height: 5.6;
+    background: black;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* line bottom */
+
+hr {
+    border-top: 2px solid black;
+}
+
+
+/* TOP SECTION - innovation on, circle image */
+
+.topSection {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* left */
+
+.textLeft {
+    font-size: 35px;
+    text-align: center;
+    margin: 5%;
+}
+
+
+/* button */
+
+button {
+    width: 160px;
+    height: 30px;
+    margin: 25px;
+}
+
+
+/* right */
+
+.circle {
+    padding: 30px;
+}
+
+header .logo {
+    margin-left: 25px;
+}
+
+
+/* MIDDLE - features, about */
+
+.middleSection {
+    display: flex;
+}
+
+.features,
+.about {
+    margin: 3%;
+}
+
+
+/* BOTTOM - services, products, vision*/
+
+.bottomSection {
+    display: flex;
+}
+
+
+/* FOOTER */
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ==========SERVICES PAGE============== */
+
+.boxleft,
+.boxright {
+    background: #f4f3f4;
+    margin: 2%;
+    border: 1px solid black;
+}
+
+.box1,
+.box2,
+.box3,
+.boxBottom {
+    display: flex;
+}
+
+
+/* START responsive Design */
+
+.logoName2 {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .circle {
+        display: none;
+    }
+    .logoName {
+        display: none;
+    }
+    .logoName2 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        flex-flow: column;
+        justify-content: center;
+    }
+    a {
+        justify-content: center;
+        border: 2px solid gray;
+        padding: 15px;
+    }
+    .middleSection {
+        flex-flow: column;
+    }
+    .bottomSection {
+        flex-flow: column;
+    }
+    .box1 {
+        flex-flow: column;
+    }
+    .box2 {
+        flex-flow: column;
+    }
+    .box3 {
+        flex-flow: column;
+    }
+}
+
+
+/* END responsive Design */
